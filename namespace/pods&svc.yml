@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: Pod
 metadata:
-        name: nginxappdev
+        name: appdev
         namespace: devnamespacenginxapp
         labels:
             app: nginxappdev

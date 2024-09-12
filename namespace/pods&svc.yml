@@ -8,7 +8,7 @@ metadata:
 spec:
     containers:
         - name: apachecontdev
-          image: nginx:latest
+          image: apache2:latest
           resources:
               requests:
                   cpu: "10m"

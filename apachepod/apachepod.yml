@@ -21,9 +21,9 @@ spec:
  # attaching cluster ip to pod
 
 apiVersion: v1
-kind: kind: Service
+kind: Service
 metadata:
-  name:  Service Name
+  name:  apache-pod
 spec:
   selector:
     app:  Selector Label

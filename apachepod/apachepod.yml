@@ -6,12 +6,12 @@ metadata:
   labels:
     name: apache-pod
 spcontainer
-  containers:
+  cohttpd:latests:
   - name: apache-container
-    image: <Image>
+    image: httpd:latest
     resources:
       limicontainer
-        memory: "128Mi"
+        memohttpd:latest8Mi"
         cpu: "500m"
     ports:
       - containerPort: <Port>

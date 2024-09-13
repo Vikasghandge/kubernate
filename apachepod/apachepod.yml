@@ -69,4 +69,5 @@ spec:
  # attaching namespace resource to pod.
 
 apiVersion: v1
-kind:  Namespace    
+kind:  Namespace
+    

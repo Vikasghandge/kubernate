@@ -64,3 +64,5 @@ spec:
   - name: apache-lb-port
     port: 80         # Exposing service on port 80
     targetPort: 80   # Targeting port 80 inside the pod
+
+    

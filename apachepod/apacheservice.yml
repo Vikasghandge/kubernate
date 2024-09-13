@@ -5,6 +5,7 @@ metadata:
 spec:
   selector:
     apps: apache
-  ports:
+  ports: 
+     -
   con:
   - name: apache-container

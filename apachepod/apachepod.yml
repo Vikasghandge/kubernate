@@ -9,8 +9,5 @@ spcontainer
   cohttpd:latests:
   - name: apache-container
     image: httpd:latest
-   
-        memohttpd:latest8Mi"
-        cpu: "500m"
     ports:
       - containerPort: <Port>

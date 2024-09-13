@@ -2,7 +2,7 @@ apiVersion: v1
 kind: pod 
 metadata: 
   name: apache-pod
-  lables:
+  labels:
     apps: apache-pod
 spec: 
   containers: 

@@ -66,4 +66,4 @@ spec:
     targetPort: 80   # Targeting port 80 inside the pod
 
 --- 
- # attaching namespace     
+ # attaching namespace obj    

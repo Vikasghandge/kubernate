@@ -8,4 +8,5 @@ metadata:
         containers: 
         -name: apche-container
         image:  httpd:latest
-        port: 
+        ports: 
+        conat

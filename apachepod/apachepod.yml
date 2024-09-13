@@ -59,7 +59,7 @@ metadata:
   name:  Service Name
 spec:
   selector:
-    app:  apache-
+    app:  apache-pod
   type:  LoadBalancer 
   ports:
   - name:  name-of-the-port

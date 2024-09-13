@@ -1,3 +1,4 @@
+
 # Apache Pod Definition
 apiVersion: v1
 kind: Pod
@@ -69,11 +70,5 @@ spec:
     port: 80         # Exposing service on port 80
     targetPort: 80   # Targeting port 80 inside the pod
 
---- 
- # attaching namespace resource to pod.
 
-apiVersion: v1
-kind:  Namespace
-metadata:
-  name: apache-namespace
 

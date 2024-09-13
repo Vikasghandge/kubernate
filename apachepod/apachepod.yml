@@ -1,3 +1,12 @@
+apiVersion: v1
+kind:  Namespace
+metadata:
+  name: apache-namespace
+---
+
+
+
+
 
 # Apache Pod Definition
 apiVersion: v1

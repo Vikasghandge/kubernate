@@ -5,4 +5,9 @@ metadata:
      lables:
          apps: apache-pod
       spec: 
-        
+        containers:
+          - image:  image
+          name:  my-name
+          env:
+            - name:  ENVVARNAME
+              value:  ENVVARVALUE

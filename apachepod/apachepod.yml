@@ -53,7 +53,7 @@ spec:
     # adding load balancer to pod 
 
 apiVersion: v1
-kind: kind: Service
+kind: Service
 apiVersion: v1
 metadata:
   name:  loadbalacer

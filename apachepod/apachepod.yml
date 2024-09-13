@@ -66,4 +66,6 @@ spec:
     targetPort: 80   # Targeting port 80 inside the pod
 
 --- 
- # attaching namespace resource     
+ # attaching namespace resource to pod.
+
+ap     

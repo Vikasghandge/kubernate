@@ -7,6 +7,6 @@ spec:
     apps: apache
   ports: 
      - protocol: TCP
-     
+       
   con:
   - name: apache-container

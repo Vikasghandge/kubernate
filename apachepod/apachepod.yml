@@ -59,7 +59,7 @@ metadata:
   name:  Service Name
 spec:
   selector:
-    app:  Selector Label
+    app:  apache-
   type:  LoadBalancer 
   ports:
   - name:  name-of-the-port

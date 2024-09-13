@@ -4,3 +4,4 @@ metadata:
     -name: apache-pod
      lables:
          apps: apache-pod
+    

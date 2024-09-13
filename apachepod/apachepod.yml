@@ -52,4 +52,5 @@ spec:
 --- 
     # adding load balancer to pod 
 
-apiVersion: api
+apiVersion: v1
+ki

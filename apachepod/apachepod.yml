@@ -37,8 +37,7 @@ spec:
   # adding node port to pod 
 
 apiVersion: v1
-kind: kind: Service
-apiVersion: v1
+kind: Service
 metadata:
   name:  Service Name
 spec:

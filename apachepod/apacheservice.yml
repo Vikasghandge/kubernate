@@ -6,4 +6,5 @@ metadata:
     apps: apache
 spec: 
   containers:
-  -
+  - name: apache-container
+  

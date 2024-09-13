@@ -42,7 +42,7 @@ metadata:
   name:  node-port
 spec:
   selector:
-    app:  Selector Label
+    app:  apache-pod
   type:  LoadBalancer | ClusterIP | NodePort
   ports:
   - name:  name-of-the-port

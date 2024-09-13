@@ -5,12 +5,12 @@ metadata:
   name: apache-pod
   labels:
     name: apache-pod
-sp
+spcontainer
   containers:
-  - name: apache-
+  - name: apache-container
     image: <Image>
     resources:
-      limi
+      limicontainer
         memory: "128Mi"
         cpu: "500m"
     ports:

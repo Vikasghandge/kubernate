@@ -5,4 +5,4 @@ metadata:
      lables:
          apps: apache-pod
       spec: 
-        container
+        containers: 

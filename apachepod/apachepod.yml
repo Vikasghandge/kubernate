@@ -6,7 +6,7 @@ metadata:
     apps: apache-pod
 spec: 
   containers: 
-      - name: apche-container
+      - name: apache-container
         image:  httpd:latest
         ports: 
         - ContainerPort: 80

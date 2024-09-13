@@ -53,4 +53,4 @@ spec:
     # adding load balancer to pod 
 
 apiVersion: v1
-ki
+kind: Service

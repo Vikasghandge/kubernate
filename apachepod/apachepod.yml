@@ -18,4 +18,5 @@ spec:
 
 
 ---
- # attaching       
+ # attaching cluster ip to pod
+       

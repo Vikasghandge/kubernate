@@ -1,0 +1,66 @@
+# Apache Pod Definition
+apiVersion: v1
+kind: Pod
+metadata:
+  name: apache-pod
+  labels:
+    app: apache-pod  # Matching label for the services
+spec:
+  containers:
+  - name: apache-container
+    image: httpd:latest
+    resources:
+      limits:
+        memory: "128Mi"
+        cpu: "500m"
+    ports:
+    - containerPort: 80  # Exposing port 80 inside the pod
+
+---
+
+# ClusterIP Service
+apiVersion: v1
+kind: Service
+metadata:
+  name: cluster-ip
+spec:
+  selector: 
+    app: apache-pod  # Matches the pod's label
+  type: ClusterIP
+  ports:
+  - name: apache-port
+    port: 80         # Exposing service on port 80
+    targetPort: 80   # Targeting port 80 inside the pod
+
+---
+
+# NodePort Service
+apiVersion: v1
+kind: Service
+metadata:
+  name: node-port
+spec:
+  selector:
+    app: apache-pod  # Matches the pod's label
+  type: NodePort
+  ports:
+  - name: apache-nodeport
+    port: 80         # Exposing service on port 80
+    targetPort: 80   # Targeting port 80 inside the pod
+    nodePort: 30008  # Optional: specify a nodePort or let Kubernetes assign one
+
+---
+
+# LoadBalancer Service
+apiVersion: v1
+kind: Service
+metadata:
+  name: apache-loadbalancer
+spec:
+  selector:
+    app: apache-pod  # Matches the pod's label
+  type: LoadBalancer
+  ports:
+  - name: apache-lb-port
+    port: 80         # Exposing service on port 80
+    targetPort: 80   # Targeting port 80 inside the pod

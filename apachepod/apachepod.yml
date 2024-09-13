@@ -10,4 +10,4 @@ spcontainer
   - name: apache-container
     image: httpd:latest
     ports:
-      - containerPort: <Port>
+    - containerPort: 80

@@ -7,4 +7,4 @@ metadata:
       spec: 
         containers: 
         -name: apche-container
-        image
+        image:  httpd

@@ -8,6 +8,5 @@ spec:
   ports: 
      - protocol: TCP
        port: 80
-       targetPort:
-  con:
-  - name: apache-container
+       targetPort: 80
+

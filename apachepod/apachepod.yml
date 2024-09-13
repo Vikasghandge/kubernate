@@ -8,7 +8,7 @@ metadata:
 spec:
   containers:
   - name: apache-conatiner
-    image: <Image>
+    image: httpd:latest
     resources:
       limits:
         memory: "128Mi"

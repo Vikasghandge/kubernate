@@ -6,3 +6,4 @@ metadata:
          apps: apache-pod
       spec: 
         containers: 
+        -name

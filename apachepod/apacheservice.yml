@@ -4,8 +4,7 @@ metadata:
   name: apache-service 
 spec:
   selector:
-  labels: 
     apps: apache
-spec: 
+ 
   con:
   - name: apache-container

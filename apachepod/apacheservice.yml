@@ -3,4 +3,5 @@ kind: service
 metadata: 
   name: apache-pod
   labels: 
-    app
+    apps: apache
+    

@@ -9,4 +9,4 @@ spec:
       - name: apche-container
         image:  httpd:latest
         ports: 
-        ContainerPort: 80
+        - ContainerPort: 80

@@ -5,7 +5,7 @@ metadata:
   lables:
     apps: apache-pod
 spec: 
-        containers: 
+  containers: 
         -name: apche-container
         image:  httpd:latest
         ports: 

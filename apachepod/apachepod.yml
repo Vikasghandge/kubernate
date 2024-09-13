@@ -39,7 +39,7 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name:  Service Name
+  name:  apache-pod
 spec:
   selector:
     app:  Selector Label

@@ -2,12 +2,12 @@ apiVersion: v1
 kind: apiVersion: v1
 kind: Pod
 metadata:
-  name: myapp
+  name: apache-pod
   labels:
-    name: myapp
+    name: apache-pod
 spec:
   containers:
-  - name: myapp
+  - name: apache-pod
     image: <Image>
     resources:
       limits:

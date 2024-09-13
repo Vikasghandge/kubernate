@@ -27,7 +27,7 @@ metadata:
 spec:
   selector: 
     app:  apache-pod
-  type:  LoadBalancer | ClusterIP | NodePort
+  type:   ClusterIP 
   ports:
   - name:  name-of-the-port
     port:  80

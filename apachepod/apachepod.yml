@@ -25,7 +25,7 @@ kind: Service
 metadata:
   name:  apache-pod
 spec:
-  selector: apache-pod
+  selector: 
     app:  Selector Label
   type:  LoadBalancer | ClusterIP | NodePort
   ports:

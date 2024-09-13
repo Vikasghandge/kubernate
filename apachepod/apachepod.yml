@@ -3,4 +3,4 @@ kind: pod
 metadata: 
     -name: apache-pod
     lables:
-         apps: apche
+         apps: apache-pod

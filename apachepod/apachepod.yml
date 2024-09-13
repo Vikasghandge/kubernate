@@ -43,8 +43,8 @@ metadata:
 spec:
   selector:
     app:  apache-pod
-  type:  LoadBalancer | ClusterIP | NodePort
+  type:   NodePort
   ports:
-  - name:  name-of-the-port
+  - name:  
     port:  80
     targetPort:  8080

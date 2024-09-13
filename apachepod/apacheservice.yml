@@ -5,4 +5,9 @@ metadata:
   labels: 
     apps: apache
 spec: 
-  name:  name
+  containers:
+    - image:  image
+    name:  my-name
+    env:
+      - name:  ENVVARNAME
+        value:  ENVVARVALUE

@@ -34,4 +34,7 @@ spec:
     targetPort:  8080
 
 --- 
-  # adding 
+  # adding node port to pod 
+
+apiVersion: v1
+kind: S

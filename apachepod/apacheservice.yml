@@ -5,6 +5,5 @@ metadata:
   labels: 
     apps: apache
 spec: 
-  containers:
+  con:
   - name: apache-container
-  

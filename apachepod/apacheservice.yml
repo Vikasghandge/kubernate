@@ -4,4 +4,5 @@ metadata:
   name: apache-pod
   labels: 
     apps: apache
-spec:
+spec: 
+  name:  name

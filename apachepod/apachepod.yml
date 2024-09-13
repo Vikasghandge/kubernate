@@ -19,4 +19,6 @@ spec:
 
 ---
  # attaching cluster ip to pod
-       
+
+apiVersion: v1
+kind:

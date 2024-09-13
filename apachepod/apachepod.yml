@@ -50,4 +50,6 @@ spec:
     targetPort:  8080
 
 --- 
-    #adding load balancer to pod 
+    # adding load balancer to pod 
+
+apiVersion: api

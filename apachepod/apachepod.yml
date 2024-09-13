@@ -3,6 +3,7 @@ apiVersion: v1
 kind: Pod
 metadata:
   name: apache-pod
+  apa
   labels:
     app: apache-pod  # Matching label for the services
 spec:

@@ -23,7 +23,7 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name:  apache-C
+  name:  apache-cluster-ip
 spec:
   selector: 
     app:  apache-pod

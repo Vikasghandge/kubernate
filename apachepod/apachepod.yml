@@ -10,3 +10,17 @@ spec:
         image:  httpd:latest
         ports: 
         - containerPort: 80
+
+
+apiVersion: v1
+kind: Pod
+metadata:
+  name: apache-pod
+  labels:
+    app: apache
+spec:
+  containers:
+  - name: apache-container
+    image: httpd:latest
+    ports:
+    - containerPort: 80

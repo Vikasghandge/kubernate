@@ -4,7 +4,7 @@ kind: Pod
 metadata:
   name: apache-pod
   labels:
-    name: apache-pod
+    name: apache-pod1
 spec:
   containers:
   - name: apache-conatiner

@@ -2,4 +2,4 @@ apiVersion: apps/v1
 kind: ReplicaSet
 metadata:
   name:  ReplicaSet-nginx
-  
+  lables:

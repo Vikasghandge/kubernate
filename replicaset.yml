@@ -3,4 +3,5 @@ kind: ReplicaSet
 metadata: 
    name:  replica-in
    labels: 
-      app: replica
+      app: replica-in
+spec:      

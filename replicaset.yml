@@ -1,27 +1,27 @@
 apiVersion: apps/v1
 kind: ReplicaSet
 metadata: 
-   name:  replica-in
+   name: replica-in
    labels: 
       app: replica-in
 spec:
     replicas: 4
-    template:  
-     metadata:
-       labels:
-         app: replica-in
-    spec:
-      containers:
-       - name: nginxcon
-         image: nginx:latest
-         resources: 
-            requests:            
-              cpu: "200m"
-              memory: "128Mi"         
-         ports:
-          - protocol: TCP
-            containerPort: 80
-            name:  http 
     selector:
-        matchExpressions:
-          - {key: app, operator: In, values: [replica-in, replica-in2, replica-in3]}  # Ensure pods have matching labels
+      matchExpressions:
+        - {key: app, operator: In, values: [replica-in, replica-in2, replica-in3]}  
+    template:  
+      metadata:
+        labels:
+          app: replica-in
+      spec:                        # This is where the pod spec starts
+        containers:
+         - name: nginxcon
+           image: nginx:latest
+           resources: 
+              requests:             # Corrected "requests"
+                cpu: "200m"
+                memory: "128Mi"         
+           ports:
+            - protocol: TCP
+              containerPort: 80
+              name: http

@@ -24,4 +24,5 @@ spec:
             containerPort: 80
             name:  http 
     selector:
-        matchExpressions:     
+        matchExpressions:
+          - {key}     

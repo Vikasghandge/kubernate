@@ -15,4 +15,5 @@ spec:
       containers:
        - name: nginxcon
          image: nginx:latest
-         resources:         
+         resources: 
+            request:         

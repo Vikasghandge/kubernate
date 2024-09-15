@@ -10,4 +10,5 @@ spec:
      metadata:
        name:  replica-in
        labels:
-         app: replica-in    
+         app: replica-in
+             

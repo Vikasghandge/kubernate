@@ -18,4 +18,4 @@ spec:
          resources: 
             request: 
               cpu: "200m"
-              mem         
+              memory:         

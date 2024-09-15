@@ -9,5 +9,6 @@ metadata:
          - {key: app, operator: In, values: [ReplicaSet-In]}
 spec: 
    containers:
-     - name: nginxcont         
+     - name: nginxcont
+       imag         
      

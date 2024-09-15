@@ -8,8 +8,8 @@ spec:
  replicas: 3
  template: 
   metadata: 
-    name: nginx-replicaset
-    lables:
+   - name: nginx-replicaset
+     lables:
       app: nginx-replicaset   
       spec:
       containers:

@@ -8,7 +8,7 @@ spec:
     replicas: 4
     selector:
       - app: replica-in05
-        - {key: app, operator: In, values: [replica-in, replica-in2, replica-in3]}  
+       # - {key: app, operator: In, values: [replica-in, replica-in2, replica-in3]}  
     template:  
       metadata:
         labels:

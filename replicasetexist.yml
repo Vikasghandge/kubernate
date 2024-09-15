@@ -6,9 +6,7 @@ metadata:
     app: nginx-replicaset10
 spec:
   replicas: 3
-  selector:
-    matchExpressions:
-      - {key: app, operator: Exists}
+     -  { key: app, operator: Exists}         
   template:
     metadata:
       labels:

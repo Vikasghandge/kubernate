@@ -8,7 +8,7 @@ spec:
   replicas: 3
   selector:
     matchExpressions:
-         key: app         
+         - key: app         
   template:
     metadata:
       labels:

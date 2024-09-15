@@ -8,4 +8,4 @@ spec:
     replicas: 4
     template:  
      metadata:
-         
+       name:  replica    

@@ -12,7 +12,7 @@ spec:
     template:  
       metadata:
         labels:
-          app: replica-in
+          app: replica-in-01
       spec:                        # This is where the pod spec starts
         containers:
          - name: nginxcon

@@ -5,4 +5,5 @@ metadata:
    labels: 
       app: replica-in
 spec:
-    replicas      
+    replicas: 4
+    tem      

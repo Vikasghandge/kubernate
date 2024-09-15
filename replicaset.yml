@@ -21,4 +21,4 @@ spec:
               memory: "128Mi"         
          ports:
           - protocol: TCP
-            containerPort:     
+            containerPort: 80    

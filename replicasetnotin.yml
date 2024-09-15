@@ -15,7 +15,7 @@ spec:
           app: replica-in-01
       spec:                        # This is where the pod spec starts
         containers:
-         - name: nginxcon
+         - name: nginxcon1
            image: nginx:latest
            resources: 
               requests:             # Corrected "requests"

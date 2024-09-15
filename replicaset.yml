@@ -8,7 +8,6 @@ spec:
     replicas: 4
     template:  
      metadata:
-       name:  replica-in
        labels:
          app: replica-in
     spec:
@@ -16,7 +15,7 @@ spec:
        - name: nginxcon
          image: nginx:latest
          resources: 
-            requests: 
+            requests:             # Corrected "requests"
               cpu: "200m"
               memory: "128Mi"         
          ports:
@@ -25,4 +24,4 @@ spec:
             name:  http 
     selector:
         matchExpressions:
-          - {key: app, operator: In, values: [replica-in, replica-in2, replica-in3]}     
+          - {key: app, operator: In, values: [replica-in, replica-in2, replica-in3]}  # Ensure pods have matching labels

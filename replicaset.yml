@@ -7,5 +7,11 @@ metadata:
   selector:
      matchExpressions:
          - {key: app, operator: In, values: [ReplicaSet-In]}
-spec:         
+spec: 
+   containers:
+     - image:  image
+     name:  my-name
+     env:
+       - name:  ENVVARNAME
+         value:  ENVVARVALUE         
      

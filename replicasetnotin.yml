@@ -3,7 +3,7 @@ kind: ReplicaSet
 metadata:
   name: nginx-replicaset
   labels:
-    app: nginx-replicaset
+    apps: nginx-replicaset
 spec:
   replicas: 3
   selector:

@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: ReplicaSet
+metadata:
+  name: nginx-replicaset10
+  labels:
+    app: nginx-replicaset10
+spec:
+  replicas: 3
+  selector:
+    matchExpressions:
+      - {key: app, operator: Exists, values: [nginx-replicaset]}
+  template:
+    metadata:
+      labels:
+        app: nginx-replicaset10
+    spec:
+      containers:
+        - name: nginxcontainer
+          image: nginx:latest
+          resources:
+            requests:
+              cpu: "500m"
+              memory: "150Mi"
+          ports:
+            - name: https
+              containerPort: 80
+              protocol: TCP

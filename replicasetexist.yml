@@ -1,30 +1,27 @@
 apiVersion: apps/v1
 kind: ReplicaSet
-metadata:
-  name: nginx-replicaset10
-  labels:
-    app: nginx-replicaset10
+metadata: 
+   name: replica-in-01
+   labels: 
+      app: replica-in-01
 spec:
-  replicas: 3
-  selector:
-    matchExpressions:
-      - key: app
-        operator: Exists
-  template:
-    metadata:
-      labels:
-        app: nginx-replicaset10
-    spec:
-      containers:
-        - name: nginxcontainer
-          image: nginx:latest
-          resources:
-            requests:
-              cpu: "500m"
-              memory: "150Mi"
-          ports:
-            - name: https
+    replicas: 4
+    selector:
+      matchExpressions:
+        - {key: app, operator: NotIn, values: [replica-in, replica-in2, replica-in3]}  
+    template:  
+      metadata:
+        labels:
+          app: replica-in-01
+      spec:                        # This is where the pod spec starts
+        containers:
+         - name: nginxcon1
+           image: nginx:latest
+           resources: 
+              requests:             # Corrected "requests"
+                cpu: "200m"
+                memory: "128Mi"         
+           ports:
+            - protocol: TCP
               containerPort: 80
-              protocol: TCP
-
-
+              name: http

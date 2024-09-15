@@ -13,5 +13,5 @@ spec:
        image:  nginx:lastest
        resources: 
           requests: 
-            cpu: "40"         
+            cpu: "400m"         
      

@@ -12,4 +12,5 @@ spec:
       - {key: app, operator: In, values: [ReplicaSet-In]} 
  template:
    metadata: 
-     labels:         
+     labels:
+       app         

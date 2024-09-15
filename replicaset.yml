@@ -10,5 +10,6 @@ metadata:
 spec: 
    containers:
      - name: nginxcont
-       image:  nginx:lastest         
+       image:  nginx:lastest
+       resouces         
      

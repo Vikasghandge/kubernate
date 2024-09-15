@@ -5,4 +5,5 @@ metadata:
   labels:
     app: ReplicaSet-In
      
-     
+spec: 
+  repl     

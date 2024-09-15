@@ -11,5 +11,6 @@ spec:
    containers:
      - name: nginxcont
        image:  nginx:lastest
-       resources:         
+       resources: 
+                  
      

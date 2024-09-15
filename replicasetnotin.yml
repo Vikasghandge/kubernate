@@ -8,7 +8,7 @@ spec:
   replicas: 3
   selector:
     matchExpressions:
-      - {key: app, operator: Exists, values: [nginx-replicaset]}
+      - {key: app, operator: Exists}
   template:
     metadata:
       labels:

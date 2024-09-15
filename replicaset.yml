@@ -1,8 +1,8 @@
 apiVersion: apps/v1
 kind: ReplicaSet
 metadata:
-  name:  ReplicaSet-
+  name:  ReplicaSet-In
   lables:
-    app: ReplicaSet-nginx
+    app: ReplicaSet-In
   selector:
      

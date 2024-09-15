@@ -7,7 +7,6 @@ metadata:
 spec:
   replicas: 3
   selector:
-    matchExpressions:
       - {key: app, operator: Exists}
   template:
     metadata:

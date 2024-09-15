@@ -6,4 +6,5 @@ metadata:
     app: ReplicaSet-In
      
 spec: 
-  repli     
+  replicas: 4
+       

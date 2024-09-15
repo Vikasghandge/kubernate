@@ -9,4 +9,4 @@ spec:
   replicas: 4
   selector: 
     matchExpressions:
-      - {key: app, operator: In, values}     
+      - {key: app, operator: In, values: []}     

@@ -6,5 +6,5 @@ metadata:
     app: ReplicaSet-In
   selector:
      matchExpressions:
-         - {key: app, operator: In}
+         - {key: app, operator: In, values}
      

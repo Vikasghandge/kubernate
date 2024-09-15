@@ -25,4 +25,4 @@ spec:
             name:  http 
     selector:
         matchExpressions:
-          - {key: app, ope}     
+          - {key: app, operator:}     

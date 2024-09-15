@@ -5,4 +5,4 @@ metadata:
   lables:
     app: ReplicaSet-nginx
   selector:
-    
+     

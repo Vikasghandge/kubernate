@@ -7,8 +7,8 @@ metadata:
 spec:
   replicas: 3
   selector:
-    matchLabels:
-      app: nginx-replicaset
+    matchExpressions:
+      - {key: app, operator: In, values: [nginx-replicaset]}
   template:
     metadata:
       labels:
@@ -24,3 +24,4 @@ spec:
           ports:
             - name: https
               containerPort: 80
+              protocol: TCP

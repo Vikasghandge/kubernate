@@ -11,4 +11,6 @@ spec:
        name:  replica-in
        labels:
          app: replica-in
-    spec:         
+    spec:
+      containers:
+       - name         

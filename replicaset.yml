@@ -4,19 +4,4 @@ metadata:
   name:  ReplicaSet-In
   labels:
     app: ReplicaSet-In
-  selector:
-     matchExpressions:
-         - {key: app, operator: In, values: [ReplicaSet-In]}
-spec: 
-  replicas: 4
-     - name: nginxcont
-       image:  nginx:lastest
-       resources: 
-          requests: 
-            cpu: "400m" 
-            memory: "100Mi"
-       ports:
-       - name:  http
-         port:  80
-         protocol: TCP               
-     
+    

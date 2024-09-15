@@ -16,7 +16,7 @@ spec:
             cpu: "400m" 
             memory: "100Mi"
        ports:
-       - name:  Port Name
-         port:  Port
+       - name:  
+         port:  80
          protocol: TCP               
      

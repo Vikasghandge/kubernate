@@ -11,4 +11,5 @@ spec:
     matchExpressions:
       - {key: app, operator: In, values: [ReplicaSet-In]} 
  template:
-   metadata:         
+   metadata: 
+     labels:         

@@ -7,4 +7,5 @@ metadata:
 spec:
     replicas: 4
     template:  
-     metadata:    
+     metadata:
+         

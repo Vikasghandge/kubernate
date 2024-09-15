@@ -9,9 +9,5 @@ metadata:
          - {key: app, operator: In, values: [ReplicaSet-In]}
 spec: 
    containers:
-     - image:  image
-     name:  my-name
-     env:
-       - name:  ENVVARNAME
-         value:  ENVVARVALUE         
+     - name:          
      

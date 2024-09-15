@@ -4,4 +4,4 @@ metadata:
   name:  ReplicaSet-nginx
   lables:
     app: ReplicaSet-nginx
-  co  
+  se  

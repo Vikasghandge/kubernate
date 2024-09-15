@@ -10,5 +10,5 @@ metadata:
 spec: 
    containers:
      - name: nginxcont
-       image:  registry/user/image         
+       image:  nginx:lastest         
      

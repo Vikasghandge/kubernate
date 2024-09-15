@@ -6,4 +6,4 @@ metadata:
       app: replica-in
 spec:
     replicas: 4
-    tem      
+    template:       

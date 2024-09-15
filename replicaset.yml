@@ -16,4 +16,5 @@ spec:
        - name: nginxcon
          image: nginx:latest
          resources: 
-            request:         
+            request: 
+              cpu:         

@@ -15,5 +15,8 @@ spec:
           requests: 
             cpu: "400m" 
             memory: "100Mi"
-       po               
+       ports:
+       - name:  Port Name
+         port:  Port
+         protocol: TCP               
      

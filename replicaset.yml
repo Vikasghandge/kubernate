@@ -8,7 +8,7 @@ metadata:
      matchExpressions:
          - {key: app, operator: In, values: [ReplicaSet-In]}
 spec: 
-  replicas:
+  replicas: 4
      - name: nginxcont
        image:  nginx:lastest
        resources: 

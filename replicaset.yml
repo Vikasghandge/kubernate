@@ -5,8 +5,8 @@ metadata:
    lables: 
    app: nginx-replicaset
 spec: 
-replicas: 3
-template: 
+ replicas: 3
+ template: 
   metadata: 
     name: nginx-replicaset
     lables:

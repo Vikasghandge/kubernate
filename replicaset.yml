@@ -1,4 +1,5 @@
 apiVersion: apps/v1
 kind: ReplicaSet
 metadata: 
-   name:  replica
+   name:  replica-in
+   

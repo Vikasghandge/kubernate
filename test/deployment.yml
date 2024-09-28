@@ -17,7 +17,7 @@ spec:
         app: deployappfront
     spec:
       containers:
-        - name: frontendapp
+        - name: backendsrv
           image: ghandgevikas/my-docker-repo:vikas
           ports:
             - containerPort: 80

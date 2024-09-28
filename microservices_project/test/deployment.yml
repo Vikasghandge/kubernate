@@ -20,7 +20,7 @@ spec:
         - name: backendsrv
           image: ghandgevikas/my-docker-repo:traffic
           ports:
-            - containerPort: 80
+            - containerPort: 80  # Ensure the application runs on this port
               protocol: TCP
           resources:
             requests:
@@ -29,6 +29,7 @@ spec:
             limits:
               memory: "128Mi"
               cpu: "250m"
+
 ---
 apiVersion: autoscaling/v2
 kind: HorizontalPodAutoscaler

@@ -1,13 +1,28 @@
+# apiVersion: v1
+# kind: Service
+# metadata:
+#   name: backendsrv
+# spec:
+#   type: ClusterIP
+#   selector:
+#     app: deployappfront
+#   ports:
+#     - port: 8080
+#       targetPort: 80  # Match the containerPort in the deployment
+#       name: tomcat
+#       protocol: TCP
+
 apiVersion: v1
 kind: Service
 metadata:
-  name: backendsrv
+  name: frontendsrv
 spec:
   type: ClusterIP
   selector:
-    app: deployappfront
+    app: deployappfront  # Ensure this matches your traffic light Deployment
   ports:
-    - port: 8080
-      targetPort: 80  # Match the containerPort in the deployment
-      name: tomcat
+    - port: 80
+      targetPort: 80
+      name: http
       protocol: TCP
+

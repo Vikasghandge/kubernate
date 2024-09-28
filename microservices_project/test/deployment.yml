@@ -49,3 +49,35 @@
 #         target:
 #           type: Utilization
 #           averageUtilization: 50
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: deployappback
+  labels:
+    app: deployappback
+spec:
+  replicas: 2
+  strategy:
+    type: RollingUpdate
+  selector:
+    matchLabels:
+      app: deployappback
+  template:
+    metadata:
+      labels:
+        app: deployappback
+    spec:
+      containers:
+        - name: backendsrv
+          image: ghandgevikas/my-docker-repo:todo
+          ports:
+            - containerPort: 8080
+          resources:
+            requests:
+              memory: "64Mi"
+              cpu: "125m"
+            limits:
+              memory: "128Mi"
+              cpu: "250m"
+

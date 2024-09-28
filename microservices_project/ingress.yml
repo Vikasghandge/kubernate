@@ -7,7 +7,7 @@ metadata:
 spec:
   ingressClassName: nginx
   rules:
-    - host:  a14a0d78030da4003a4fdcf6cdc6ad1e-1529040942.ap-south-1.elb.amazonaws.com  # Replace with your actual hostname or use the external IP
+    - host: a14a0d78030da4003a4fdcf6cdc6ad1e-1529040942.ap-south-1.elb.amazonaws.com  # Replace with your actual hostname or use the external IP
       http:
         paths:
           - path: /

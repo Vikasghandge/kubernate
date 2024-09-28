@@ -18,7 +18,7 @@ spec:
     spec:
       containers:
         - name: frontendapp
-          image: ghandgevikas/my-docker-repo:latest
+          image: ghandgevikas/my-docker-repo:vikas
           ports:
             - containerPort: 80
               protocol: TCP
